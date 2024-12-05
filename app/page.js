@@ -8,7 +8,7 @@ export default function Home() {
           Promo Kit
         </h1>
         <p className="text-lg sm:text-xl text-center sm:text-left">
-          Coming soon 🚀
+          Coming very soon 🚀
         </p>
       </main>
     </div>
