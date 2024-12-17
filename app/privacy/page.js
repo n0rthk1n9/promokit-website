@@ -13,7 +13,7 @@ export default function PrivacyPolicy() {
             Information Collection and Use
           </h2>
           <p className="text-lg sm:text-xl text-center sm:text-left">
-            I don't store any user-identifiable data anywhere outside your device.
+            I don&apos;t store any user-identifiable data anywhere outside your device.
           </p>
           <p className="text-lg sm:text-xl text-center sm:text-left">
             The app does use third-party APIs that may collect information used to identify you.
