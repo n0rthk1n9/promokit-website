@@ -16,7 +16,7 @@ export default function FAQ() {
           </p>
           <Link href="https://apps.apple.com/app/id123456789" target="_blank">
             <Image
-              src="/images/app-store-button.svg"
+              src="/images/app-store-badge.svg"
               alt={`Download on the App Store`}
               width={180}
               height={60}

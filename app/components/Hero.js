@@ -26,6 +26,7 @@ export default function Hero() {
               alt="PromoKit App Icon" 
               width={96}
               height={96}
+              quality={100}
               className="w-full h-full rounded-3xl shadow-2xl"
             />
           </div>
@@ -50,6 +51,7 @@ export default function Hero() {
                 alt="PromoKit App Interface on iPhone 16 Pro" 
                 width={320}
                 height={600}
+                quality={100}
                 className="w-80 h-auto mx-auto shadow-2xl"
               />
             </div>
@@ -68,6 +70,7 @@ export default function Hero() {
             alt="Download on the App Store" 
             width={140}
             height={56}
+            quality={100}
             className="h-14 w-auto"
           />
 
