@@ -1,5 +1,6 @@
 import localFont from "next/font/local";
 import "./globals.css";
+import StructuredData from "./components/StructuredData";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -13,13 +14,55 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "PromoKit - Promote Smarter. Share Faster.",
-  description: "Your essential companion for managing and sharing App Store Promo Codes—perfect for live events, conferences, or one-on-one demos.",
-  keywords: ["promo codes", "app store", "ios", "iphone", "ipad", "developer tools", "app marketing"],
-  authors: [{ name: "PromoKit Team" }],
+  metadataBase: new URL('https://promokit.app'),
+  title: {
+    default: "PromoKit - Promote Smarter. Share Faster.",
+    template: "%s | PromoKit"
+  },
+  description: "Your essential companion for managing and sharing App Store Promo Codes—perfect for live events, conferences, or one-on-one demos. Download PromoKit for iPhone and iPad.",
+  keywords: [
+    "promo codes",
+    "app store promo codes", 
+    "ios promo codes",
+    "iphone promo codes",
+    "ipad promo codes",
+    "developer tools",
+    "app marketing",
+    "app store connect",
+    "promo code management",
+    "mobile app marketing",
+    "ios developer tools",
+    "app store optimization",
+    "promo code sharing",
+    "app demo tools",
+    "conference tools",
+    "live event tools"
+  ],
+  authors: [{ name: "PromoKit Team", url: "https://promokit.app" }],
   creator: "PromoKit",
   publisher: "PromoKit",
-  robots: "index, follow",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  verification: {
+    google: 'your-google-verification-code',
+  },
+  alternates: {
+    canonical: 'https://promokit.app',
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -33,12 +76,14 @@ export const metadata = {
         width: 1024,
         height: 1024,
         alt: "PromoKit App Icon",
+        type: "image/webp",
       },
       {
         url: "/images/social-preview.png",
         width: 1200,
         height: 630,
         alt: "PromoKit - Promote Smarter. Share Faster.",
+        type: "image/png",
       }
     ],
   },
@@ -51,15 +96,32 @@ export const metadata = {
     images: ["/images/social-preview.png"],
   },
   icons: {
-    icon: "/images/app-icon.webp",
+    icon: [
+      { url: "/images/app-icon.webp", type: "image/webp" },
+      { url: "/favicon.ico", type: "image/x-icon" }
+    ],
     apple: "/images/app-icon.webp",
+    shortcut: "/favicon.ico",
   },
   manifest: "/manifest.json",
+  category: "developer tools",
+  classification: "mobile app",
+  other: {
+    "apple-mobile-web-app-capable": "yes",
+    "apple-mobile-web-app-status-bar-style": "default",
+    "apple-mobile-web-app-title": "PromoKit",
+    "application-name": "PromoKit",
+    "msapplication-TileColor": "#3b82f6",
+    "theme-color": "#3b82f6",
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <StructuredData />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
