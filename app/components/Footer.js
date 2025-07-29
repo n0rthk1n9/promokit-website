@@ -22,7 +22,7 @@ export default function Footer() {
                 alt="PromoKit App Icon" 
                 width={40}
                 height={40}
-                quality={100}
+                unoptimized
                 className="w-10 h-10 rounded-[10px]"
               />
               <span className="text-2xl font-bold">PromoKit</span>
@@ -35,7 +35,7 @@ export default function Footer() {
               alt="Download on the App Store" 
               width={100}
               height={40}
-              quality={100}
+              unoptimized
               className="h-10 w-auto"
             />
           </motion.div>

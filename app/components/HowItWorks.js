@@ -107,7 +107,7 @@ export default function HowItWorks() {
                 alt="Download on the App Store" 
                 width={120}
                 height={48}
-                quality={100}
+                unoptimized
                 className="h-12 w-auto"
               />
             </div>
