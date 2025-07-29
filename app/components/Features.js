@@ -37,7 +37,7 @@ const features = [
 
 export default function Features() {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-white dark:bg-gray-900">
       <div className="max-w-6xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -46,14 +46,14 @@ export default function Features() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
             Everything you need to
             <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
               share Promo Codes
             </span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
             Import your .txt file from App Store Connect and let PromoKit handle the rest.
           </p>
         </motion.div>
@@ -68,12 +68,12 @@ export default function Features() {
               viewport={{ once: true }}
               className="group"
             >
-              <div className="bg-gray-50 rounded-3xl p-8 h-full transition-all duration-300 group-hover:bg-white group-hover:shadow-xl group-hover:-translate-y-1">
+              <div className="bg-gray-50 dark:bg-gray-800 rounded-3xl p-8 h-full transition-all duration-300 group-hover:bg-white dark:group-hover:bg-gray-700 group-hover:shadow-xl dark:group-hover:shadow-none dark:group-hover:ring-1 dark:group-hover:ring-gray-600/50 group-hover:-translate-y-1">
                 <div className="text-4xl mb-4">{feature.icon}</div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
                   {feature.title}
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
                   {feature.description}
                 </p>
               </div>

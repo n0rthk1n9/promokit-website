@@ -31,7 +31,7 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-gray-50 dark:bg-gray-800">
       <div className="max-w-6xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -40,14 +40,14 @@ export default function HowItWorks() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
             Get started in
             <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
               4 simple steps
             </span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
             Setting up PromoKit is quick and easy. Here's everything you need to know.
           </p>
         </motion.div>
@@ -67,18 +67,18 @@ export default function HowItWorks() {
                 <div className="hidden lg:block absolute top-16 left-full w-full h-0.5 bg-gradient-to-r from-blue-200 to-purple-200 z-0 transform translate-x-4"></div>
               )}
               
-              <div className="relative z-10 bg-white rounded-3xl p-8 h-full shadow-lg hover:shadow-xl transition-shadow">
+              <div className="relative z-10 bg-white dark:bg-gray-800 rounded-3xl p-8 h-full shadow-lg dark:shadow-none dark:ring-1 dark:ring-gray-700/50 hover:shadow-xl dark:hover:shadow-none dark:hover:ring-1 dark:hover:ring-gray-600/50 transition-all duration-300">
                 <div className="flex items-center justify-center w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full text-white font-bold text-lg mb-6">
                   {step.number}
                 </div>
                 
                 <div className="text-3xl mb-4">{step.icon}</div>
                 
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
                   {step.title}
                 </h3>
                 
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
                   {step.description}
                 </p>
               </div>
@@ -93,11 +93,11 @@ export default function HowItWorks() {
           viewport={{ once: true }}
           className="text-center mt-16"
         >
-          <div className="bg-white rounded-3xl p-8 shadow-lg max-w-2xl mx-auto">
-            <h3 className="text-2xl font-semibold text-gray-900 mb-4">
+          <div className="bg-white dark:bg-gray-800 rounded-3xl p-8 shadow-lg dark:shadow-none dark:ring-1 dark:ring-gray-700/50 max-w-2xl mx-auto">
+            <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
               Ready to get started?
             </h3>
-            <p className="text-gray-600 mb-6">
+            <p className="text-gray-600 dark:text-gray-300 mb-6">
               Download PromoKit today and transform how you manage and share your App Store Promo Codes.
             </p>
             <img 
