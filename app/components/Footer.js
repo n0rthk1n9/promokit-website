@@ -16,23 +16,21 @@ export default function Footer() {
             className="md:col-span-2"
           >
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center">
-                <span className="text-white text-lg font-bold">PK</span>
-              </div>
+              <img 
+                src="/images/app-icon.webp" 
+                alt="PromoKit App Icon" 
+                className="w-10 h-10 rounded-[10px]"
+              />
               <span className="text-2xl font-bold">PromoKit</span>
             </div>
             <p className="text-gray-400 mb-6 max-w-md">
               Your essential companion for managing and sharing App Store Promo Codes—perfect for live events, conferences, or one-on-one demos.
             </p>
-            <div className="bg-black text-white px-6 py-3 rounded-2xl inline-flex items-center gap-3 shadow-lg hover:shadow-xl transition-shadow cursor-pointer">
-              <div className="w-6 h-6 bg-white rounded-lg flex items-center justify-center">
-                <span className="text-black text-xs font-bold">▶</span>
-              </div>
-              <div className="text-left">
-                <div className="text-xs opacity-80">Download on the</div>
-                <div className="text-sm font-semibold">App Store</div>
-              </div>
-            </div>
+            <img 
+              src="/images/app-store-badge.svg" 
+              alt="Download on the App Store" 
+              className="h-10"
+            />
           </motion.div>
 
           {/* Quick Links */}

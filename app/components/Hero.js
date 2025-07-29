@@ -18,9 +18,13 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
           className="mb-8"
         >
-          {/* App Icon Placeholder */}
-          <div className="w-24 h-24 mx-auto mb-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-3xl shadow-2xl flex items-center justify-center">
-            <span className="text-white text-2xl font-bold">PK</span>
+          {/* App Icon */}
+          <div className="w-24 h-24 mx-auto mb-8">
+            <img 
+              src="/images/app-icon.webp" 
+              alt="PromoKit App Icon" 
+              className="w-full h-full rounded-3xl shadow-2xl"
+            />
           </div>
 
           <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight">
@@ -42,16 +46,12 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="flex flex-col sm:flex-row gap-4 justify-center items-center"
         >
-          {/* App Store Badge Placeholder */}
-          <div className="bg-black text-white px-8 py-4 rounded-2xl flex items-center gap-3 shadow-lg hover:shadow-xl transition-shadow cursor-pointer">
-            <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
-              <span className="text-black text-sm font-bold">▶</span>
-            </div>
-            <div className="text-left">
-              <div className="text-xs opacity-80">Download on the</div>
-              <div className="text-lg font-semibold">App Store</div>
-            </div>
-          </div>
+          {/* App Store Badge */}
+          <img 
+            src="/images/app-store-badge.svg" 
+            alt="Download on the App Store" 
+            className="h-14"
+          />
 
           <div className="text-gray-500 text-sm">
             Available for iPhone and iPad

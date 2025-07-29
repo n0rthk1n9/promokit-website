@@ -100,15 +100,11 @@ export default function HowItWorks() {
             <p className="text-gray-600 mb-6">
               Download PromoKit today and transform how you manage and share your App Store Promo Codes.
             </p>
-            <div className="bg-black text-white px-8 py-4 rounded-2xl inline-flex items-center gap-3 shadow-lg hover:shadow-xl transition-shadow cursor-pointer">
-              <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
-                <span className="text-black text-sm font-bold">▶</span>
-              </div>
-              <div className="text-left">
-                <div className="text-xs opacity-80">Download on the</div>
-                <div className="text-lg font-semibold">App Store</div>
-              </div>
-            </div>
+            <img 
+              src="/images/app-store-badge.svg" 
+              alt="Download on the App Store" 
+              className="h-12"
+            />
           </div>
         </motion.div>
       </div>
