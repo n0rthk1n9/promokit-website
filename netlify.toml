@@ -13,16 +13,7 @@
   package = "@netlify/plugin-cache"
   [plugins.inputs]
     paths = [
-      ".next/cache",
-      "node_modules/.cache",
-      ".yarn/cache"
-    ]
-
-# Cache Next.js build artifacts
-[[plugins]]
-  package = "@netlify/plugin-cache"
-  [plugins.inputs]
-    paths = [
       ".next/cache/**/*",
-      "node_modules/.cache/**/*"
+      "node_modules/.cache/**/*",
+      ".yarn/cache"
     ] 
