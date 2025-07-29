@@ -131,6 +131,8 @@ export default function RootLayout({ children }) {
         <meta name="application-name" content="PromoKit" />
         <meta name="msapplication-TileColor" content="#3b82f6" />
         <meta name="theme-color" content="#3b82f6" />
+        {/* Apple App Banner */}
+        <meta name="apple-itunes-app" content="app-id=6739035369, app-argument=https://promokit.app" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
