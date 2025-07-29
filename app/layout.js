@@ -72,13 +72,6 @@ export const metadata = {
     description: "Your essential companion for managing and sharing App Store Promo Codes—perfect for live events, conferences, or one-on-one demos.",
     images: [
       {
-        url: "/images/app-icon.webp",
-        width: 1024,
-        height: 1024,
-        alt: "PromoKit App Icon",
-        type: "image/webp",
-      },
-      {
         url: "/images/social-preview.png",
         width: 1200,
         height: 630,
