@@ -1,0 +1,28 @@
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "18"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+# Build cache configuration
+[[plugins]]
+  package = "@netlify/plugin-cache"
+  [plugins.inputs]
+    paths = [
+      ".next/cache",
+      "node_modules/.cache",
+      ".yarn/cache"
+    ]
+
+# Cache Next.js build artifacts
+[[plugins]]
+  package = "@netlify/plugin-cache"
+  [plugins.inputs]
+    paths = [
+      ".next/cache/**/*",
+      "node_modules/.cache/**/*"
+    ] 
