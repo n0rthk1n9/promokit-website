@@ -65,14 +65,16 @@ export default function Hero() {
           className="flex flex-col sm:flex-row gap-4 justify-center items-center"
         >
           {/* App Store Badge */}
-          <Image 
-            src="/images/app-store-badge.svg" 
-            alt="Download on the App Store" 
-            width={140}
-            height={56}
-            unoptimized
-            className="h-14 w-auto"
-          />
+          <a href="https://apps.apple.com/de/app/promokit/id6739035369" target="_blank" rel="noopener noreferrer">
+            <Image 
+              src="/images/app-store-badge.svg" 
+              alt="Download on the App Store" 
+              width={140}
+              height={56}
+              unoptimized
+              className="h-14 w-auto"
+            />
+          </a>
 
                       <div className="text-gray-500 dark:text-gray-400 text-sm">
               Available for iPhone and iPad

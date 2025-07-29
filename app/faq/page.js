@@ -14,7 +14,7 @@ export default function FAQ() {
           <p className="text-lg mb-4">
             {`To download `}<strong>{`Promo Kit`}</strong>{`, just press the download button below:`}
           </p>
-          <Link href="https://apps.apple.com/app/id123456789" target="_blank">
+          <Link href="https://apps.apple.com/de/app/promokit/id6739035369" target="_blank">
             <Image
               src="/images/app-store-badge.svg"
               alt={`Download on the App Store`}
