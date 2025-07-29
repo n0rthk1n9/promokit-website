@@ -106,6 +106,14 @@ export const metadata = {
     "application-name": "PromoKit",
     "msapplication-TileColor": "#3b82f6",
     "theme-color": "#3b82f6",
+    // Apple Messages specific meta tags
+    "apple-itunes-app": "app-id=YOUR_APP_ID",
+    "apple-mobile-web-app-capable": "yes",
+    "apple-mobile-web-app-status-bar-style": "black-translucent",
+    "format-detection": "telephone=no",
+    // Additional meta tags for better iMessage preview
+    "twitter:image:alt": "PromoKit - Promote Smarter. Share Faster.",
+    "og:image:alt": "PromoKit - Promote Smarter. Share Faster.",
   },
 };
 
@@ -114,6 +122,15 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <StructuredData />
+        {/* Additional meta tags for iMessage compatibility */}
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="apple-mobile-web-app-title" content="PromoKit" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="application-name" content="PromoKit" />
+        <meta name="msapplication-TileColor" content="#3b82f6" />
+        <meta name="theme-color" content="#3b82f6" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
