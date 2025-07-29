@@ -35,9 +35,20 @@ export default function Hero() {
             </span>
           </h1>
 
-          <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
             Your essential companion for managing and sharing App Store Promo Codes—perfect for live events, conferences, or one-on-one demos.
           </p>
+
+          {/* App Screenshot */}
+          <div className="mb-12 max-w-md mx-auto">
+            <div className="relative">
+              <img 
+                src="/images/app-screenshot.png" 
+                alt="PromoKit App Interface on iPhone 16 Pro" 
+                className="w-80 h-auto mx-auto shadow-2xl"
+              />
+            </div>
+          </div>
         </motion.div>
 
         <motion.div

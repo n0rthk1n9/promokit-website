@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 dark:bg-black text-white py-16">
+    <footer className="bg-gray-800 dark:bg-gray-950 text-white py-16">
       <div className="max-w-6xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
@@ -97,7 +97,7 @@ export default function Footer() {
           className="border-t border-gray-800 mt-12 pt-8 text-center"
         >
           <p className="text-gray-400 dark:text-gray-500">
-            © 2024 PromoKit. All rights reserved. Made with ❤️ for developers.
+            © 2024 PromoKit. All rights reserved. Made with ❤️ for developers in 🌋 Napoli & ⚓ Hamburg.
           </p>
         </motion.div>
       </div>
