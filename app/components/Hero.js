@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 export default function Hero() {
   return (
@@ -20,9 +21,11 @@ export default function Hero() {
         >
           {/* App Icon */}
           <div className="w-24 h-24 mx-auto mb-8">
-            <img 
+            <Image 
               src="/images/app-icon.webp" 
               alt="PromoKit App Icon" 
+              width={96}
+              height={96}
               className="w-full h-full rounded-3xl shadow-2xl"
             />
           </div>
@@ -42,9 +45,11 @@ export default function Hero() {
           {/* App Screenshot */}
           <div className="mb-12 max-w-md mx-auto">
             <div className="relative">
-              <img 
+              <Image 
                 src="/images/app-screenshot.png" 
                 alt="PromoKit App Interface on iPhone 16 Pro" 
+                width={320}
+                height={600}
                 className="w-80 h-auto mx-auto shadow-2xl"
               />
             </div>
@@ -58,10 +63,12 @@ export default function Hero() {
           className="flex flex-col sm:flex-row gap-4 justify-center items-center"
         >
           {/* App Store Badge */}
-          <img 
+          <Image 
             src="/images/app-store-badge.svg" 
             alt="Download on the App Store" 
-            className="h-14"
+            width={140}
+            height={56}
+            className="h-14 w-auto"
           />
 
                       <div className="text-gray-500 dark:text-gray-400 text-sm">

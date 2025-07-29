@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 export default function Footer() {
   return (
@@ -16,9 +17,11 @@ export default function Footer() {
             className="md:col-span-2"
           >
             <div className="flex items-center gap-3 mb-4">
-              <img 
+              <Image 
                 src="/images/app-icon.webp" 
                 alt="PromoKit App Icon" 
+                width={40}
+                height={40}
                 className="w-10 h-10 rounded-[10px]"
               />
               <span className="text-2xl font-bold">PromoKit</span>
@@ -26,10 +29,12 @@ export default function Footer() {
             <p className="text-gray-400 dark:text-gray-500 mb-6 max-w-md">
               Your essential companion for managing and sharing App Store Promo Codes—perfect for live events, conferences, or one-on-one demos.
             </p>
-            <img 
+            <Image 
               src="/images/app-store-badge.svg" 
               alt="Download on the App Store" 
-              className="h-10"
+              width={100}
+              height={40}
+              className="h-10 w-auto"
             />
           </motion.div>
 

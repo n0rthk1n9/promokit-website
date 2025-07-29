@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 const steps = [
   {
@@ -48,7 +49,7 @@ export default function HowItWorks() {
             </span>
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Setting up PromoKit is quick and easy. Here's everything you need to know.
+            Setting up PromoKit is quick and easy. Here&apos;s everything you need to know.
           </p>
         </motion.div>
 
@@ -101,10 +102,12 @@ export default function HowItWorks() {
               Download PromoKit today and transform how you manage and share your App Store Promo Codes.
             </p>
             <div className="flex justify-center">
-              <img 
+              <Image 
                 src="/images/app-store-badge.svg" 
                 alt="Download on the App Store" 
-                className="h-12"
+                width={120}
+                height={48}
+                className="h-12 w-auto"
               />
             </div>
           </div>
