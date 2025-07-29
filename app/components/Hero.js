@@ -52,7 +52,7 @@ export default function Hero() {
                 width={320}
                 height={600}
                 unoptimized
-                className="w-80 h-auto mx-auto shadow-2xl"
+                className="w-80 h-auto mx-auto"
               />
             </div>
           </div>
