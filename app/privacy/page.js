@@ -6,37 +6,37 @@ import ThemeToggle from '../components/ThemeToggle';
 
 export default function PrivacyPolicy() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-white to-gray-50 dark:from-gray-900 dark:to-gray-800">
+    <main className="min-h-screen bg-gradient-to-br from-gray-50 to-white dark:from-gray-900 dark:to-gray-800">
       <ThemeToggle />
-      <div className="max-w-4xl mx-auto px-6 py-20">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="text-center mb-16"
-        >
-          <Link href="/" className="inline-flex items-center gap-3 mb-8 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors">
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-            </svg>
-            Back to Home
-          </Link>
-          
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-            Privacy Policy
-          </h1>
-          <p className="text-xl text-gray-600 dark:text-gray-300">
-            How we handle your data in PromoKit
-          </p>
-        </motion.div>
+      <div className="container mx-auto px-4 py-8 md:px-8 lg:px-16">
+        <div className="mx-auto max-w-3xl space-y-6">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="mb-8"
+          >
+            <Link 
+              href="/" 
+              className="inline-flex items-center text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors mb-6"
+            >
+              ← Back to Home
+            </Link>
+            <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
+              Privacy Policy
+            </h1>
+            <p className="text-lg text-gray-600 dark:text-gray-300">
+              How we handle your data in PromoKit
+            </p>
+          </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="bg-white dark:bg-gray-800 rounded-3xl p-8 md:p-12 shadow-lg dark:shadow-none dark:ring-1 dark:ring-gray-700/50"
-        >
-          <div className="prose prose-lg dark:prose-invert max-w-none">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="bg-white dark:bg-gray-800 rounded-3xl p-8 shadow-lg dark:shadow-none dark:ring-1 dark:ring-gray-700/50"
+          >
+            <div className="space-y-6">
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
               PromoKit Privacy Policy
             </h2>
@@ -104,8 +104,9 @@ export default function PrivacyPolicy() {
               </a>
               .
             </p>
-          </div>
-        </motion.div>
+            </div>
+          </motion.div>
+        </div>
       </div>
     </main>
   );

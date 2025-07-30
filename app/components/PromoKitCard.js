@@ -40,6 +40,7 @@ export function PromoKitCard() {
         </Link>
         <div className="relative z-30 transition-transform duration-300 hover:scale-110" onClick={(e) => e.stopPropagation()}>
           <a 
+            id="download"
             href="https://apps.apple.com/de/app/promokit/id6739035369" 
             target="_blank" 
             rel="noopener noreferrer"
