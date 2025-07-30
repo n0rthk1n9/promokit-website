@@ -69,11 +69,12 @@ export default function HowItWorks() {
               )}
               
               <div className="relative z-10 bg-white dark:bg-gray-800 rounded-3xl p-8 h-full shadow-lg dark:shadow-none dark:ring-1 dark:ring-gray-700/50 hover:shadow-xl dark:hover:shadow-none dark:hover:ring-1 dark:hover:ring-gray-600/50 transition-all duration-300">
-                <div className="flex items-center justify-center w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full text-white font-bold text-lg mb-6">
-                  {step.number}
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="flex items-center justify-center w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full text-white font-bold text-lg">
+                    {step.number}
+                  </div>
+                  <div className="text-3xl">{step.icon}</div>
                 </div>
-                
-                <div className="text-3xl mb-4">{step.icon}</div>
                 
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
                   {step.title}
