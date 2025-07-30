@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import { AppStoreBadge } from './AppStoreBadge';
 
 const steps = [
   {
@@ -103,16 +104,7 @@ export default function HowItWorks() {
               Download PromoKit today and transform how you manage and share your App Store Promo Codes.
             </p>
             <div className="flex justify-center">
-              <a href="https://apps.apple.com/de/app/promokit/id6739035369" target="_blank" rel="noopener noreferrer">
-                <Image 
-                  src="/images/app-store-badge.svg" 
-                  alt="Download on the App Store" 
-                  width={120}
-                  height={48}
-                  unoptimized
-                  className="h-12 w-auto"
-                />
-              </a>
+              <AppStoreBadge url="https://apps.apple.com/de/app/promokit/id6739035369" />
             </div>
           </div>
         </motion.div>

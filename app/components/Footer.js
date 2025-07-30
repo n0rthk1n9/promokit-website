@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import { AppStoreBadge } from './AppStoreBadge';
 
 export default function Footer() {
   return (
@@ -30,16 +31,7 @@ export default function Footer() {
             <p className="text-gray-400 dark:text-gray-500 mb-6 max-w-md">
               Your essential companion for managing and sharing App Store Promo Codes—perfect for live events, conferences, or one-on-one demos.
             </p>
-            <a href="https://apps.apple.com/de/app/promokit/id6739035369" target="_blank" rel="noopener noreferrer">
-              <Image 
-                src="/images/app-store-badge.svg" 
-                alt="Download on the App Store" 
-                width={100}
-                height={40}
-                unoptimized
-                className="h-10 w-auto"
-              />
-            </a>
+            <AppStoreBadge url="https://apps.apple.com/de/app/promokit/id6739035369" />
           </motion.div>
 
           {/* Quick Links */}

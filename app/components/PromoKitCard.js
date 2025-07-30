@@ -4,6 +4,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
+import { AppStoreBadge } from './AppStoreBadge';
 
 const promokitColor = 'rgba(59, 130, 246, 0.1)'; // Blue color for PromoKit
 
@@ -39,22 +40,9 @@ export function PromoKitCard() {
           </span>
         </Link>
         <div className="relative z-30 transition-transform duration-300 hover:scale-110" onClick={(e) => e.stopPropagation()}>
-          <a 
-            id="download"
-            href="https://apps.apple.com/de/app/promokit/id6739035369" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="inline-block"
-          >
-            <Image 
-              src="/images/app-store-badge.svg" 
-              alt="Download PromoKit on the App Store" 
-              width={100}
-              height={40}
-              unoptimized
-              className="h-10 w-auto"
-            />
-          </a>
+          <div id="download">
+            <AppStoreBadge url="https://apps.apple.com/de/app/promokit/id6739035369" />
+          </div>
         </div>
       </div>
     </motion.div>

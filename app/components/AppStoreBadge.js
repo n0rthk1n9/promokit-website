@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 
-export function AppStoreButton({ url }) {
+export function AppStoreBadge({ url }) {
   return (
     <a
       href={url}

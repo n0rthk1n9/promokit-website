@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import { AppStoreBadge } from './AppStoreBadge';
 
 export default function Hero() {
   return (
@@ -43,6 +44,17 @@ export default function Hero() {
             Your essential companion for managing and sharing App Store Promo Codes—perfect for live events, conferences, or one-on-one demos.
           </p>
 
+          {/* App Store Badge */}
+          <div className="mb-8 flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <div id="download">
+              <AppStoreBadge url="https://apps.apple.com/de/app/promokit/id6739035369" />
+            </div>
+
+            <div className="text-gray-500 dark:text-gray-400 text-sm">
+              Available for iPhone and iPad
+            </div>
+          </div>
+
           {/* App Screenshot */}
           <div className="mb-12 max-w-md mx-auto">
             <div className="relative">
@@ -56,29 +68,6 @@ export default function Hero() {
               />
             </div>
           </div>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="flex flex-col sm:flex-row gap-4 justify-center items-center"
-        >
-          {/* App Store Badge */}
-          <a id="download" href="https://apps.apple.com/de/app/promokit/id6739035369" target="_blank" rel="noopener noreferrer">
-            <Image 
-              src="/images/app-store-badge.svg" 
-              alt="Download on the App Store" 
-              width={140}
-              height={56}
-              unoptimized
-              className="h-14 w-auto"
-            />
-          </a>
-
-                      <div className="text-gray-500 dark:text-gray-400 text-sm">
-              Available for iPhone and iPad
-            </div>
         </motion.div>
 
         {/* Scroll indicator */}

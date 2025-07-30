@@ -3,7 +3,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { AppStoreButton } from '../components/AppStoreButton';
+import { AppStoreBadge } from '../components/AppStoreBadge';
 import Link from 'next/link';
 
 import ThemeToggle from '../components/ThemeToggle';
@@ -51,7 +51,7 @@ export default function FAQ() {
                 className="rounded-lg"
                 unoptimized
               />
-              <AppStoreButton url={iOSUrl} />
+              <AppStoreBadge url={iOSUrl} />
             </div>
             <p className="text-gray-600 dark:text-gray-300">
               <strong>To download PromoKit, just press the download button at the App Store button above</strong>
