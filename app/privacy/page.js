@@ -49,7 +49,7 @@ export default function PrivacyPolicy() {
               Information Collection and Use
             </h3>
             <p className="text-gray-600 dark:text-gray-300 mb-6">
-              I don't store any user-identifiable data anywhere outside your device. All your promo codes and app data are stored locally on your device and are never transmitted to external servers.
+              I don&apos;t store any user-identifiable data anywhere outside your device. All your promo codes and app data are stored locally on your device and are never transmitted to external servers.
             </p>
             <p className="text-gray-600 dark:text-gray-300 mb-6">
               The app does use third-party APIs that may collect information used to identify you. This includes App Store Connect for promo code validation.

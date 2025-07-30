@@ -88,7 +88,7 @@ export default function FAQ() {
                   </li>
                   <li>Cancel the download and restart it.</li>
                   <li>
-                    Check Apples{' '}
+                    Check Apple&apos;s{' '}
                     <a
                       href="https://support.apple.com/en-us/HT207165"
                       className="text-blue-600 dark:text-blue-400 hover:underline"
@@ -124,7 +124,7 @@ export default function FAQ() {
               <div className="space-y-4 text-gray-600 dark:text-gray-300">
                 <ul className="list-disc pl-6 space-y-2">
                   <li>
-                    Just open the <strong>App Store</strong> App on your iPhone and search for "PromoKit". If a new update is available it will show an "Update" button on the App Store page of the app.
+                    Just open the <strong>App Store</strong> App on your iPhone and search for &quot;PromoKit&quot;. If a new update is available it will show an &quot;Update&quot; button on the App Store page of the app.
                   </li>
                   <li>
                     The other way is to simply just tap on the App Store button on top of this support page to directly open the App Store page of the PromoKit App
@@ -181,7 +181,7 @@ export default function FAQ() {
                     Copy a code or deep link to your clipboard with a single tap for fast sharing at events, in person, or online.
                   </li>
                   <li>
-                    Instantly see which codes are used and how many remain valid, so you're always in control.
+                    Instantly see which codes are used and how many remain valid, so you&apos;re always in control.
                   </li>
                   <li>
                     Enjoy built-in dark mode for low-light environments and full VoiceOver support for accessibility.
@@ -202,7 +202,7 @@ export default function FAQ() {
           >
             <div className="space-y-4 text-gray-600 dark:text-gray-300">
               <p>
-                Thank you for using my app PromoKit. This means a lot to me. If you still have problems of any kind or you have suggestions on expanding it, don't hesitate to contact me at:{' '}
+                Thank you for using my app PromoKit. This means a lot to me. If you still have problems of any kind or you have suggestions on expanding it, don&apos;t hesitate to contact me at:{' '}
                 <a href="mailto:support@promokit.app" className="text-blue-600 dark:text-blue-400 hover:underline">
                   support@promokit.app
                 </a>
