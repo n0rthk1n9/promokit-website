@@ -52,17 +52,17 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-3">
               <li>
-                <a href="#" className="text-gray-400 dark:text-gray-500 hover:text-white transition-colors">
+                <a href="#features" className="text-gray-400 dark:text-gray-500 hover:text-white transition-colors">
                   Features
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 dark:text-gray-500 hover:text-white transition-colors">
+                <a href="#how-it-works" className="text-gray-400 dark:text-gray-500 hover:text-white transition-colors">
                   How it Works
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 dark:text-gray-500 hover:text-white transition-colors">
+                <a href="#download" className="text-gray-400 dark:text-gray-500 hover:text-white transition-colors">
                   Download
                 </a>
               </li>
