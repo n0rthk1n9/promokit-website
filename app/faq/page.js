@@ -66,7 +66,7 @@ export default function FAQ() {
           >
             <div className="space-y-4">
               <h2 className="text-xl font-semibold text-gray-900 dark:text-white">
-                I tried to download the PromoKit App onto my device but it didn't work, what should I do?
+                I tried to download the PromoKit App onto my device but it didn&apos;t work, what should I do?
               </h2>
               <div className="space-y-4 text-gray-600 dark:text-gray-300">
                 <p>If you have problems downloading PromoKit here are some tips:</p>
